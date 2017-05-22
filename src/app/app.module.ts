@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ClockComponent } from './clock/clock.component';
+import { ModalComponent } from './modal/modal.component';
+import { GoogleComponent } from './google/google.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ClockComponent,
+    ModalComponent,
+    GoogleComponent
   ],
   imports: [
     BrowserModule,

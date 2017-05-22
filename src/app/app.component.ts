@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  
+ showGoogle: boolean;
+  
+   constructor() {
+        this.showGoogle = true;
+    }
+  
+  @ViewChild('closeModal') closeModal: ElementRef;
+  
+  modalClose() {
+    this.closeModal.nativeElement.click();
+  }
+  
+    toggleGoogle(){
+        if(this.showGoogle == true){
+            this.showGoogle = false;
+        } else {
+        this.showGoogle = true;
+        }
 }
+ }

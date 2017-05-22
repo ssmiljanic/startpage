@@ -1,0 +1,23 @@
+.clock {
+	margin-top: 5%;
+}
+.clock h1.heavy{
+	font-weight: 2000;
+}
+
+.clock h1{
+	display: inline-block;
+}
+
+@media ( max-width : 720px) {
+	.clock {
+	margin-top: 40%;
+}
+.clock h1.heavy{
+	font-weight: 2000;
+}
+
+.clock h1{
+	display: inline-block;
+}
+}

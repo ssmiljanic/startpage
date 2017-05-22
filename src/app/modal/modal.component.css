@@ -1,0 +1,115 @@
+.settings {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		max-width: 37%;
+		max-height: auto;
+		padding: 10;
+	}
+
+.modal-window {
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.5);
+		top: 20%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+		border-radius: 25px;
+	}
+	.modal-window:target {
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.modal-window>div {
+		width: 50%;
+		position: relative;
+		margin: auto;
+		padding: 2rem;
+		background: #fff;
+		border-radius: 21px;
+		-webkit-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.55);
+	}
+	.modal-window header {
+		font-weight: bold;
+	}
+	.modal-close {
+		color: #aaa;
+		line-height: 50px;
+		font-size: 90%;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 70px;
+		text-decoration: none;
+		background: #fff;
+		border-radius: 21px;
+	}
+	.modal-close:hover {
+		color: #000;
+	}
+	.modal-window h1 {
+		font-size: 150%;
+		margin: 0 0 15px;
+		background: #fff;
+	}
+	.modal-content {
+		background: #fff;
+	}
+	
+	/* On/Off switch*/
+	.onoffswitch {
+		position: relative;
+		width: 53px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+	}
+	.onoffswitch-checkbox {
+		display: none;
+	}
+	.onoffswitch-label {
+		display: block;
+		overflow: hidden;
+		cursor: pointer;
+		height: 23px;
+		padding: 0;
+		line-height: 23px;
+		border: 2px solid #E3E3E3;
+		border-radius: 23px;
+		background: #FFFFFF;
+		transition: background-color 0.3s ease-in;
+	}
+	.onoffswitch-label:before {
+		content: "";
+		display: block;
+		width: 23px;
+		margin: 0px;
+		background: #FFFFFF;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 28px;
+		border: 2px solid #E3E3E3;
+		border-radius: 23px;
+		transition: all 0.3s ease-in 0s;
+	}
+	.onoffswitch-checkbox:checked+.onoffswitch-label {
+		background-color: #49E845;
+	}
+	.onoffswitch-checkbox:checked+.onoffswitch-label, .onoffswitch-checkbox:checked+.onoffswitch-label:before
+		{
+		border-color: #49E845;
+	}
+	.onoffswitch-checkbox:checked+.onoffswitch-label:before {
+		right: 0px;
+	}

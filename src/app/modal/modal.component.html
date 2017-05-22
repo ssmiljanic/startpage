@@ -1,11 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-
-<div class="body">
-	<clock></clock>
-	<google *ngIf="showGoogle"></google>
-</div>
-
 <!-- Modal -->
+
 <div class="settings" on-click="modalClose()">
 		<a href="#open-modal"><img src="../assets/img/settings.png"
 			class="settings" alt="Settings" /></a>
@@ -17,22 +11,21 @@
 		<h1>Settings</h1>
 		<div class="modal-content">
 			<!-- Google Search switch -->
-			<div class="onoffswitch modal-content">
+			<div class="onoffswitch">
 				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch1"> 
-				<label class="onoffswitch-label" for="switch1" (click)="toggleGoogle()"></label>
+					<label class="onoffswitch-label" for="switch1"></label>
 			</div>
-			
+			<div class="modal-text">
+				<h3>hide search</h3>
+			</div>
 
 			<br />
 			<!-- Switch2 -->
-			<div class="onoffswitch modal-content">
-				<input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="switch2"> 
-				<label class="onoffswitch-label" for="switch2"></label>
+			<div class="onoffswitch">
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch2"> 
+					<label class="onoffswitch-label" for="switch2"></label>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- /Modal -->
-
-
-
