@@ -11,7 +11,22 @@
 		text-align: center;
 		font-family: 'Raleway';
 	}
-	
+
+  date{
+    font-family: 'Raleway';
+  }
+
+  .username{
+    margin-top: 3%;
+    background: #fff;
+  }
+  .username input {
+    background: #fff;
+  }
+  .username button {
+    background: #fff;
+  }
+
 	/* Modal */
 	.settings {
 		position: absolute;
@@ -82,7 +97,7 @@
 	.modal-content {
 		background: #fff;
 	}
-	
+
 	/* On/Off switch*/
 	.onoffswitch {
 		position: relative;
@@ -144,7 +159,11 @@
 		text-align: center;
 		font-family: 'Raleway';
 	}
-	
+
+  date{
+    font-family: 'Raleway';
+  }
+
 	/* Modal */
 	.settings {
 		position: absolute;
@@ -214,7 +233,7 @@
 	.modal-content {
 		background: #fff;
 	}
-	
+
 	/* On/Off switch*/
 	.onoffswitch {
 		position: relative;
@@ -262,5 +281,5 @@
 	.onoffswitch-checkbox:checked+.onoffswitch-label:before {
 		right: 0px;
 	}
-	
+
 }

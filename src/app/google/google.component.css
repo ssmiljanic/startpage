@@ -2,7 +2,7 @@
 #searchthis{
 	position: relative;
 	left: 29%;
-	margin-top: 5%;
+	margin-top: 10%;
 	max-width: 100%;
 }
 
@@ -19,7 +19,7 @@ border:0 none;
 font-weight:bold;
 width: 10%;
 }
- 
+
 #namanyay-search-box {
 background: #eee;
 padding:10px;
@@ -30,12 +30,12 @@ padding:10px;
 border:0 none;
 width:30%;
  }
- 
+
 @media ( max-width : 720px) {
 	#searchthis{
 	position: absolute;
 	left: 14%;
-	margin-top: 5%;
+	margin-top: 12%;
 	}
 
 #namanyay-search-btn {
@@ -51,7 +51,7 @@ border:0 none;
 font-weight:bold;
 width: 25%;
 }
- 
+
 #namanyay-search-box {
 background: #eee;
 padding:10px;

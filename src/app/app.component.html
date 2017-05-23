@@ -2,7 +2,10 @@
 
 <div class="body">
 	<clock></clock>
+  <date></date>
+  <name></name>
 	<google *ngIf="showGoogle"></google>
+
 </div>
 
 <!-- Modal -->
@@ -18,17 +21,21 @@
 		<div class="modal-content">
 			<!-- Google Search switch -->
 			<div class="onoffswitch modal-content">
-				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch1"> 
+				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="switch1">
 				<label class="onoffswitch-label" for="switch1" (click)="toggleGoogle()"></label>
 			</div>
-			
+
 
 			<br />
 			<!-- Switch2 -->
 			<div class="onoffswitch modal-content">
-				<input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="switch2"> 
+				<input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="switch2">
 				<label class="onoffswitch-label" for="switch2"></label>
 			</div>
+      <div class="username">
+        <input [(ngModel)]="username">
+        <button (click)="setName(username)">save name</button>
+      </div>
 		</div>
 	</div>
 </div>

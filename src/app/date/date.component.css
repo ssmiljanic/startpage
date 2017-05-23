@@ -1,0 +1,23 @@
+.date {
+  color: #eeeeee;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2.7%;
+  margin-right: 2%;
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+
+@media ( max-width : 720px) {
+  .date {
+    color: #eeeeee;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 5.3%;
+    margin-right: 2%;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+}

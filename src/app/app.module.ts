@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { ClockComponent } from './clock/clock.component';
 import { ModalComponent } from './modal/modal.component';
 import { GoogleComponent } from './google/google.component';
+import { DateComponent } from './date/date.component';
+import { NameComponent } from './name/name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClockComponent,
     ModalComponent,
-    GoogleComponent
+    GoogleComponent,
+    DateComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,

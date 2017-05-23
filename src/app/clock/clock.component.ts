@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ClockComponent {
 
   clock = Observable
-        .interval(1000)
-        .map(()=> new Date());
+  .interval(1000)
+  .map(()=> new Date());
 
 }
